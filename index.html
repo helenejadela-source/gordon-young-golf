@@ -48,8 +48,10 @@ footer{font-family:system-ui,sans-serif;font-size:.85rem;color:#555;text-align:c
 .float{position:fixed;right:16px;bottom:16px;z-index:9;padding:14px 18px}
 .hero{max-width:960px;margin:-40px auto 0;padding:0 20px;position:relative;z-index:2}.hero img,.wide{width:100%;height:auto;border-radius:16px;display:block;box-shadow:0 8px 24px rgba(0,0,0,.15)}
 .gallery{display:grid;gap:12px;grid-template-columns:repeat(3,1fr);margin-bottom:12px}.gallery img{width:100%;height:auto;aspect-ratio:9/16;object-fit:cover;border-radius:14px}
-@media(max-width:560px){.gallery{grid-template-columns:1fr 1fr}.gallery img:last-child{grid-column:span 2;aspect-ratio:4/3}}
-.wide{margin-bottom:12px}.seve{margin:0}.seve figcaption{font-style:italic;color:var(--g);text-align:center;margin-top:6px}
+@media(max-width:560px){.gallery{gap:8px}}
+.gallery img.face{object-position:15% 30%}
+.wide{margin-bottom:12px}.seve{margin:0}.seve figcaption strong{font-style:normal;font-size:1.2rem}.seve figcaption{font-style:italic;color:var(--g);text-align:center;margin-top:6px}
+.card h3{display:flex;align-items:center;gap:10px}.ic{width:30px;height:30px;flex:none;color:var(--g);background:var(--sand);border-radius:50%;padding:4px;stroke:var(--g)}
 </style>
 </head>
 <body>
@@ -72,19 +74,19 @@ footer{font-family:system-ui,sans-serif;font-size:.85rem;color:#555;text-align:c
 <div class="gallery">
 <img src="img/gordon-swing.jpg" alt="Gordon Young hitting a golf ball on the practice ground in soft morning light" loading="lazy" width="900" height="1600">
 <img src="img/practice-balls.jpg" alt="" role="presentation" loading="lazy" width="900" height="1600">
-<img src="img/gordon-portrait.jpg" alt="Portrait of Scottish golf professional Gordon Young" loading="lazy" width="1600" height="901">
+<img class="face" src="img/gordon-portrait.jpg" alt="Portrait of Scottish golf professional Gordon Young" loading="lazy" width="1600" height="901">
 </div>
 <img class="wide" src="img/gordon-scoring.jpg" alt="Gordon Young at a professional golf tournament" loading="lazy" width="1600" height="901">
-<figure class="seve"><img class="wide" src="img/with-seve.jpg" alt="Gordon Young with Seve Ballesteros" loading="lazy" width="1600" height="901"><figcaption>With Seve Ballesteros</figcaption></figure>
+<figure class="seve"><img class="wide" src="img/with-seve.jpg" alt="Gordon Young with Seve Ballesteros" loading="lazy" width="1600" height="901"><figcaption><strong>A wee throwback</strong><br>From the old photo box: a young Gordon with the great Seve Ballesteros.</figcaption></figure>
 </section>
 
 <section>
 <h2>Lessons</h2>
 <div class="grid">
-<div class="card"><h3>Private lesson</h3><p>60 minutes, one to one. Gordon looks at your swing and gives you one or two clear things to work on.</p></div>
-<div class="card"><h3>Perfect Practice Morning package</h3><p>3 or 5 mornings. Step by step, you build a swing that repeats, and you see real progress.</p></div>
-<div class="card"><h3>Beginner's start</h3><p>New to golf? Learn grip, stance and a simple swing in a relaxed, friendly way.</p></div>
-<div class="card"><h3>Small-group lessons</h3><p>Learn together with friends, family or colleagues. Fun, focused and personal.</p></div>
+<div class="card"><h3><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7.5" r="3.5"/><path d="M5 20c0-3.9 3.1-7 7-7s7 3.1 7 7"/></svg>Private lesson</h3><p>60 minutes, one to one. Gordon looks at your swing and gives you one or two clear things to work on.</p></div>
+<div class="card"><h3><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18h18"/><path d="M7 18a5 5 0 0 1 10 0"/><path d="M12 6v3M5.6 9.6l2 2M18.4 9.6l-2 2M2.5 14.5h2.5M19 14.5h2.5"/><path d="M8 21h8"/></svg>Perfect Practice Morning package</h3><p>3 or 5 mornings. Step by step, you build a swing that repeats, and you see real progress.</p></div>
+<div class="card"><h3><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21v-9"/><path d="M12 13c0-4-3-6-7-6 0 4 3 6 7 6z"/><path d="M12 11c0-3.5 2.5-5.5 6.5-5.5 0 3.5-2.5 5.5-6.5 5.5z"/><path d="M8 21h8"/></svg>Beginner's start</h3><p>New to golf? Learn grip, stance and a simple swing in a relaxed, friendly way.</p></div>
+<div class="card"><h3><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="2.8"/><circle cx="5.5" cy="9.5" r="2.2"/><circle cx="18.5" cy="9.5" r="2.2"/><path d="M7.5 20c0-2.9 2-5 4.5-5s4.5 2.1 4.5 5"/><path d="M1.5 19c0-2.4 1.6-4.2 4-4.2 1 0 1.8.3 2.4.8M22.5 19c0-2.4-1.6-4.2-4-4.2-1 0-1.8.3-2.4.8"/></svg>Small-group lessons</h3><p>Learn together with friends, family or colleagues. Fun, focused and personal.</p></div>
 </div>
 <p style="font-family:system-ui,sans-serif;font-size:.9rem;color:#555">Ask Gordon on WhatsApp for availability and rates.</p>
 </section>
